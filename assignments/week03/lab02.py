@@ -35,11 +35,11 @@ if entered_pin == pin:
         if choice == "1":
             print("You balance =",balance)
         if choice =="2":
-            amount=float input("Whithdraw amount :")
+            amount=float(input("Whithdraw amount :"))
             if amount < 0:
                 print("Cannot windraw amount: ")
             else:
-            balance = balance-amount
+            balance = balance-amount 
             print("Please cllect your money, and your balance now =",balance)
         if choice=="3":
             amount=float(input("Deposit amount:"))
