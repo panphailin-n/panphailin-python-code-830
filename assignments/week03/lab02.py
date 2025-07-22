@@ -22,7 +22,7 @@ else:
 """
 balance = 1000
 pin = 1234
-entered_pin = int(input("Enter PIN :"))
+entered_pin = input("Enter PIN :")
 if entered_pin == pin:
     print("PIN accepted")
     while True :
@@ -31,7 +31,7 @@ if entered_pin == pin:
         print("3.Deposit")
         print("4.Exit")
         
-        choice = int(input("Choose option"))
+        choice = input("Choose option")
         if choice == "1":
             print("You balance =",balance)
         if choice =="2":
