@@ -7,7 +7,7 @@ entered_pin = input("Enter PIN: ")
 if entered_pin == pin:
     print("PIN accepted")
     while True:
-        print("\n1. Check Balance")
+        print("1. Check Balance")
         print("2. Withdraw")
         print("3. Deposit") 
         print("4. Exit")
@@ -35,7 +35,7 @@ if entered_pin == pin:
         if choice == "1":
             print("You balance =",balance)
         if choice =="2":
-            amount=float(input("Whithdraw amount :"))
+            amount=float input("Whithdraw amount :")
             if amount < 0:
                 print("Cannot windraw amount: ")
             else:
@@ -53,8 +53,6 @@ if entered_pin == pin:
         else :
             print("Errror")
             continue
-    
-
-    else:
+          else:
         print("Invaid PIN")       
 
