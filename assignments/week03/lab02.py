@@ -22,8 +22,8 @@ else:
 """
 balance = 1000
 pin = 1234
-enterad_pin = int(input("Enter PIN :"))
-if enterad_pin == pin:
+entered_pin = int(input("Enter PIN :"))
+if entered_pin == pin:
     print("PIN accepted")
     while True :
         print("\n 1.Cheak Balance")
@@ -35,7 +35,7 @@ if enterad_pin == pin:
         if choice == "1":
             print("You balance =",balance)
         if choice =="2":
-            amount=float(input("How much do you want Withdeaw"))
+            amount=float(input("Whithdraw amount :"))
             if amount < 0:
                 print("Cannot windraw amount: ")
             else:
