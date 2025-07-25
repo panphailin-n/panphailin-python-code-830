@@ -13,46 +13,32 @@ entertainment_budget = int(input("Mounthly entretainment budget :"))
 emergency_fund_percent = float(input("Percentage to save for emergency(e.g.,10.5) :"))
 investment_percent = float(input("Percentage to invest(e.g.,15.0) :"))
 
-result_add1 = rent_cost + transportation_cost
-print(f"Total Fixed Expenses:   {rent_cost} + {transportation_cost} = {result_add1}")
+Total_Fixed=rent_cost+transportation_cost
+Total_Variable=food_budget+entertainment_budget
+Total_Expenses=Total_Fixed+Total_Variable
+Remaining_income=Monthly_income-Total_Expenses
+Emergency_Fund_Amount=Monthly_income*(emergency_fund_percent/100)
+investment_amount = Monthly_income * (investment_percent / 100)
+Available_savings=emaining_income-Emergency_Fund_Amoun-investment_amount
+Expense_ratio=(Total_Expenses/Monthly_income)*100
 
-result_add2= food_budget + entertainment_budget
-print(f"Total Variable Expenses :    {food_budget} + {entertainment_budget} = {result_add2}")
-
-result_add3= result_add1 + result_add2
-print(f"Total  Expenses :    {result_add1} + {result_add2} = {result_add3}")
-
-result_sub1 = Monthly_income -result_add3
-print(f"Remaining Income:    {Monthly_income} - {result_add3} = {result_sub1}")
-
-result_mul1 = Monthly_income * (emergency_fund_percent/100)
-print(f" Investment Amount  : {Monthly_income} * {emergency_fund_percent/100} = {result_mul1}")
-
-result_mul2 = Monthly_income * (investment_percent/100)
-print(f"Emergency fund Amount : {Monthly_income} * {investment_percent/100} = {result_mul2}")
-
-result_sub2 = result_sub1 -emergency_fund_percent -investment_percent
-print(f"Available for Savings:    {result_sub1} - {emergency_fund_percent}-{investment_percent}= {result_sub2}")
-
-result_div = (result_add3 /Monthly_income)*100
-print(f"Expense Ratio:       {result_add3} / {Monthly_income} = {result_div}")
 print("")
 print("===MOUNTHY BUDGET REPORT===")
-print("Income :",Monthly_income,"THB")
-print("Fixed Expenses : ",result_add1,"THB")
-print("Variable Expenses :",result_add2,"THB")
-print("Total Expenses : ",result_add3,"THB")
-print("Remaining Income :",result_sub1,"THB")
+print(f"Income :{Monthly_income:.2f}THB")
+print(f"Fixed Expenses : {Total_Fixed:.2f}THB")
+print(f"Variable Expenses :{Total_Variable:.2f}THB")
+print(f"Total Expenses : {otal_Expenses:.2f}THB")
+print(f"Remaining Income :{Remaining_income:.2f}THB")
 print("")
 
 print("===SAVINGS BREAKDOWN===")
-print("Emergency Fund (10%): ",result_mul2,"THB")
-print("Investment (15%):",result_mul1,"THB")
-print("Available for Savings: ",result_sub2,"THB")
+print(f"Emergency Fund ({emergency_fund_percent}%): {emergency_fund_percent:.2f}THB")
+print(f"Investment ({investment_percent}%):{investment_percent:.2f}THB")
+print("Available for Savings:{Available_savings:.2f}THB")
 print("")
 
 print("===ANALYSIS===")
-print(f"Expense Ratio:{result_div:.2f}%")
+print(f"Expense Ratio:{Expense_ratio:.2f}%")
 print("")
 
 
