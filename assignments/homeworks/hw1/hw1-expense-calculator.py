@@ -5,13 +5,13 @@ Date :[21/7/2568]
 Purpose:Calculator monthly budget amd savings
 """
 
-Monthly_income = float(input("User Monthly_income in THB :"))
+Monthly_income = float(input("User's Monthly_income in THB :"))
 rent_cost= float(input("Mounthly rent : "))
 food_budget = int(input("Mounthly food budget in THB :"))
 transportation_cost = float(input("Mounthly transportation expenses :"))
 entertainment_budget = int(input("Mounthly entretainment budget :"))
-emergency_fund_percent = float(input("Percentage to save for emergency(e.g.,10.5) :"))
-investment_percent = float(input("Percentage to invest(e.g.,15.0) :"))
+emergency_fund_percent = float(input("Percentage to save for emergency :"))
+investment_percent = float(input("Percentage to invest :"))
 
 Total_Fixed=rent_cost+transportation_cost
 Total_Variable=food_budget+entertainment_budget
@@ -32,8 +32,8 @@ print(f"Remaining Income :{Remaining_income:.2f}THB")
 print("")
 
 print("===SAVINGS BREAKDOWN===")
-print(f"Emergency Fund (10.5%): {Emergency_Fund_Amount:.2f}THB")
-print(f"Investment (15%):{investment_Amount:.2f}THB")
+print(f"Emergency Fund ({emergency_fund_percent}): {Emergency_Fund_Amount:.2f}THB")
+print(f"Investment ({investment_percent}):{investment_Amount:.2f}THB")
 print(f"Available for Savings:{Available_savings:.2f}THB")
 print("")
 
