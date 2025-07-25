@@ -19,7 +19,7 @@ Total_Expenses=Total_Fixed+Total_Variable
 Remaining_income=Monthly_income-Total_Expenses
 Emergency_Fund_Amount=Monthly_income*(emergency_fund_percent/100)
 investment_amount = Monthly_income * (investment_percent / 100)
-Available_savings=emaining_income-Emergency_Fund_Amoun-investment_amount
+Available_savings=Remaining_income-Emergency_Fund_Amoun-investment_amount
 Expense_ratio=(Total_Expenses/Monthly_income)*100
 
 print("")
@@ -27,7 +27,7 @@ print("===MOUNTHY BUDGET REPORT===")
 print(f"Income :{Monthly_income:.2f}THB")
 print(f"Fixed Expenses : {Total_Fixed:.2f}THB")
 print(f"Variable Expenses :{Total_Variable:.2f}THB")
-print(f"Total Expenses : {otal_Expenses:.2f}THB")
+print(f"Total Expenses : {Total_Expenses:.2f}THB")
 print(f"Remaining Income :{Remaining_income:.2f}THB")
 print("")
 
