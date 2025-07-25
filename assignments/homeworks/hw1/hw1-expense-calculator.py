@@ -23,7 +23,7 @@ Available_savings=Remaining_income-Emergency_Fund_Amount-investment_Amount
 Expense_ratio=(Total_Expenses/Monthly_income)*100
 
 print("")
-print("===MOUNTHY BUDGET REPORT===")
+print("===MOUNTHLY BUDGET REPORT===")
 print(f"Income :{Monthly_income:.2f}THB")
 print(f"Fixed Expenses : {Total_Fixed:.2f}THB")
 print(f"Variable Expenses :{Total_Variable:.2f}THB")
