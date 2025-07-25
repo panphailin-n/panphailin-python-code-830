@@ -53,6 +53,8 @@ print("")
 
 print("===ANALYSIS===")
 print(f"Expense Ratio:{result_div:.2f}%")
+print("")
+
 
 
 
