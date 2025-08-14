@@ -38,7 +38,7 @@ def number_operations():
     above_average = []# Your code here
     
     for i in range(10):
-        if numbers[i]%2 == 0:
+        if numbers[i] % 2 == 0:
             even_numbers.append(number[i])
         else:
             odd_numbers.append(number[i])
