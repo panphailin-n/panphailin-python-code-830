@@ -18,14 +18,14 @@ print("Calling say_hello():")
 say_hello()
 print()
 
-# Example 2: Function that performs a task
+# Example 2: Function that performs a task การพิมเส้ร
 def draw_separator():
     """Draws a line separator"""
     print("-" * 40)
 
 draw_separator()
 print("This is between separators")
-draw_separator()
+draw_separator() #เรียกใช้
 print()
 
 # =============================================================================
@@ -118,7 +118,7 @@ print(f"multiply(4, 5) + square(3) = {multiply(4, 5)} + {square(3)} = {result}")
 print()
 
 # =============================================================================
-# PART 4: DEFAULT PARAMETERS
+# PART 4: DEFAULT PARAMETERS อยู่ในพาลามิเตอร์ลิส จะมีกี่ตัวก็ได้ แต่เป็นตัวแรกไม่ได้
 # =============================================================================
 print("\n=== PART 4: DEFAULT PARAMETERS ===")
 
