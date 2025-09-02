@@ -10,7 +10,7 @@ print(f"Mammals: {mammals}")
 print(f"Small pets: {small_pets}")
 
 # Subset and superset
-print(f"Are pets subset of all animals? {pets.issubset(all_animals)}")
+print(f"Are pets subset of all animals? {pets.issubset(all_animals)}") # pets เป็นสับเซตของสัตวืทั้งหมดมั้ย
 print(f"Are all animals superset of pets? {all_animals.issuperset(pets)}")
 
 # Disjoint sets (no common elements)

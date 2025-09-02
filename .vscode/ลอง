@@ -1,0 +1,8 @@
+student = {
+    "name": "Alice",
+    "midterm": 20,
+    "final": "Computer Science",
+    "homework": 3.8,
+}
+total_grade=(midterm*0.3)+(final*0.4)+(homework*0.3)
+ print(f"Alice total grade=",total_grade)

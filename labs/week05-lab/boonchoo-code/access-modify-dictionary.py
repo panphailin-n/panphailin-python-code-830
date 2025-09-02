@@ -6,7 +6,7 @@ student = {
     "courses": ["Python", "Java", "Calculus"]
 }
 
-# Accessing values by key
+# Accessing values by key เข้าถึง วาลุ่ว
 print(f"Name: {student['name']}")           # Alice Smith
 print(f"Age: {student['age']}")             # 20
 
@@ -31,7 +31,7 @@ print(f"Items: {list(student.items())}")
 """ modify dictionary """
 
 
-# Creating a dictionary
+# Creating a dictionary  การแก้ไชช้อมูล ใน ดิชเชอนารี่
 inventory = {
     "apples": 50,
     "bananas": 30,

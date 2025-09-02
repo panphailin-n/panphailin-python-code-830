@@ -1,10 +1,10 @@
-# Empty dictionary
+# Empty dictionary การสร้างดิชเชอนารี่ขึ้นมาใหม่ คือ คีย์กับวาลู่ว
 empty_dict = {}
 another_empty_dict = dict()
 
 # Dictionary with initial values
 student = {
-    "name": "Alice Smith",
+    "name": "Alice Smith",   #ซ้านคือ คีย์ ขวาคือ วาลู่ว
     "age": 20,
     "major": "Computer Science",
     "gpa": 3.8
