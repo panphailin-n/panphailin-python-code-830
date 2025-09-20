@@ -1,8 +1,8 @@
 
 def contact_book():
     """
-    Contact management system using dictionaries
-    Each contact: {"name": str, "phone": str, "email": str, "category": str}
+    Contact management system using dictionaries # ระบบจัดการบัญชีผู้ติดต่อโดยใช้ ดิชเชอนารี
+    Each contact: {"name": str, "phone": str, "email": str, "category": str} category  หมวกหมู่
     """
     
     # Initialize empty contacts dictionary
@@ -36,7 +36,7 @@ def contact_book():
         
         print(f"Contact '{name}' added successfully!")
     
-    def view_contact():
+    def view_contact(): # ค้นหาข้อมูลโดยใช้ดาต้า
         """View details of a specific contact"""
         print("\n=== View Contact ===")
         
@@ -83,14 +83,14 @@ def contact_book():
             print("No contacts found!")
             return
         
-        print(f"{'Name':<20} {'Phone':<15} {'Email':<25} {'Category':<10}")
+        print(f"{'Name':<20} {'Phone':<15} {'Email':<25} {'Category':<10}") # ความพยายามสร้างตาาราง
         print("-" * 70)
         
         # TODO: Implement listing logic
         
         pass
     
-    def update_contact():
+    def update_contact(): # แก้ไขข้อมูลใน คนแท็ก
         """Update an existing contact"""
         print("\n=== Update Contact ===")
         

@@ -17,7 +17,7 @@ phone_book = {
 # 3. Counting occurrences
 text = "hello world hello python"
 word_count = {}
-for word in text.split():
+for word in text.split(): # ฟังค์ชั่น ล้าง ข้อความนี้ ออกเป็น 4 ก่อน ผ่านทาง สเปคบาร์
     word_count[word] = word_count.get(word, 0) + 1
 print(f"Word count: {word_count}")
 
