@@ -1,2 +1,2 @@
-name: panphailin Nukhunthod
-pass : 141930  
+x = [1, 2, 3]  
+x.append([4, 5])  
