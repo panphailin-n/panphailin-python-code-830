@@ -1,9 +1,7 @@
 # Set relationships
-all_animals = {"dog", "cat", "bird", "fish", "rabbit", "hamster"}
-pets = {"dog", "cat", "rabbit"}
-mammals = {"dog", "cat", "rabbit", "hamster"}
-small_pets = {"cat", "rabbit", "hamster"}
 
+<<<<<<< HEAD
+=======
 print(f"All animals: {all_animals}")
 print(f"Pets: {pets}")
 print(f"Mammals: {mammals}")
@@ -27,3 +25,4 @@ print(f"Are pets equal to pets_copy? {pets == pets_copy}")
 print(f"Number of mammals: {len(mammals)}")
 print(f"Is 'dog' in mammals? {'dog' in mammals}")
 print(f"Is 'fish' in mammals? {'fish' in mammals}")
+>>>>>>> 3246234867a2cd467afebad74eed3a182945b8eb
