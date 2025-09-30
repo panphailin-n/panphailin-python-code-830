@@ -5,8 +5,8 @@ Core Features:
 
 1. Character Analysis:
     - Count total characters (with and without spaces)
-    - Count vowels and consonants separately
-    - Find most frequent character
+    - Count vowels and consonants separately #นับพยัญชนพ
+    - Find most frequent character อักขระตัวไหน เยอะที่สุด
 
 2. Word Analysis:
     - Count total words
@@ -18,7 +18,7 @@ Core Features:
     - Create acronym from first letter of each word
     - Reverse the entire string and each word individually
     
-Example Result
+Example Result ตัวอย่างผลรัน
 
 Enter text: The Quick Brown Fox Jumps Over The Lazy Dog
 
@@ -47,3 +47,23 @@ Transformations:
 USE: len(), split(), count(), upper(), lower(), title(), slicing operations
 
 """
+string = "The Quick Brown Fox Jumps Over The Lazy Dog"
+
+print("=== TEXT ANALYSIS REPORT ===")
+print("Character Analysis")
+print("- Total characters:%d(with spaces),%d(without spaces)"% (len(string),len(string)-string.count(" ")))
+strLower = string.lower()
+vowels = string.count("a")+strLower.count("e")+strLower.count("i")+strLower.count("o")+strLower.count("u")
+
+vowelsStr = ""
+for char in strLower :
+    if char in ['a','e','i','o','u']:
+        vowelsStr += char+","
+
+print("-Vowels:%d(%s)"%(vowels,vowelsStr)) 
+print("-Consonants: %d"%(len(string)-string.count(" ")-vowels))
+
+
+words =string.split()
+print("Word Analysis :")
+print("-Total words :",len(words))
