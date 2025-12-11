@@ -1,5 +1,3 @@
-
-class MyWord:
-    def sayhello():
-        print(f"สวัสดีค่ะ \n หนูชื่อวิว")
-    sayhello()        
+class Display{
+    pubbic
+}

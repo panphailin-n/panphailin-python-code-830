@@ -39,9 +39,9 @@ def greet_person(name):
     print(f"Hello, {name}! Nice to meet you.")
 
 print("Calling greet_person with different names:")
-greet_person("Alice")
-greet_person("Bob")
-greet_person("Charlie")
+greet_person("V9")
+greet_person("Aaron")
+greet_person("my daddy")
 print()
 
 # Example 2: Function with multiple parameters
